@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Interactive Rating Component Main</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <main>
+        <h1 class="sr-only">Rating Section</h1>
+        <section class="section" id="page-main">
+            <div class="circle">
+                <img class="icon-star" src="images/icon-star.svg" alt="icon star">
+            </div>
+            <h2>How did we do?</h2>
+            <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+            <div class="rate-container">
+                <div onclick="selectRate(this)" class="circle">1</div>
+                <div onclick="selectRate(this)" class="circle">2</div>
+                <div onclick="selectRate(this)" class="circle">3</div>
+                <div onclick="selectRate(this)" class="circle">4</div>
+                <div onclick="selectRate(this)" class="circle">5</div>
+            </div>
+            <button onclick="submit()" type="submit" class="btn-submit">SUBMIT</button>
+        </section>
+        <section id="page-result">
+            <div class="icon-tq">
+                <img src="images/illustration-thank-you.svg" alt="icon thank you">
+            </div>
+            <div class="result">You selected <span id=result>#</span> out of 5</div>
+            <h2>Thank You!</h2>
+            <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
